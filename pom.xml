@@ -13,6 +13,7 @@
     <maven.compiler.target>18</maven.compiler.target>
     <spring.version>6.0.9</spring.version>
     <slf4j.version>2.0.7</slf4j.version>
+    <thymeleaf.version>3.1.1.RELEASE</thymeleaf.version>
     <maven.plugins.version>3.11.0</maven.plugins.version>
   </properties>
 
@@ -53,8 +54,13 @@
 
     <dependency>
       <groupId>org.thymeleaf</groupId>
-      <artifactId>thymeleaf-spring5</artifactId>
-      <version>3.1.1.RELEASE</version>
+      <artifactId>thymeleaf-spring6</artifactId>
+      <version>${thymeleaf.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${spring.version}</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
     <dependency>
